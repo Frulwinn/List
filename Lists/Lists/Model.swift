@@ -9,13 +9,12 @@ class Model {
     
     // adds a new item
     func add(_ item: String) {
+        //appending item added to the array
         items.append(item)
     }
     
     // resets your list
     func resetItems() {
-        if items.isEmpty {
-            return
-        }
+        items.removeAll()
     }
 }
